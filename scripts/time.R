@@ -1,7 +1,7 @@
 
-pacman::p_load(tidyverse, sf, jsonlite, USAboundaries, leaflet, ggthemes, geofacet)
+pacman::p_load(tidyverse, sf, jsonlite, USAboundaries, leaflet, ggthemes, geofacet) # nolint
 
-httpgd::hgd() 
+httpgd::hgd()
 httpgd::hgd_browse()
 
 json_to_tibble <- function(x) {
@@ -52,7 +52,7 @@ dat_starbucks <- dat_sf %>% filter(location_name == "Starbucks")
 dat_dunkin <- dat_sf %>% filter(location_name == "Dunkin'")
 
 dat_space_dunkin <- dat_dunkin %>%
-    select(placekey, street_address, city, stusps = region, raw_visitor_counts) %>%
+    select(placekey, street_address, city, stusps = region, raw_visitor_counts) %>% # nolint
     filter(!is.na(raw_visitor_counts)) %>%
     group_by(stusps) %>%
     summarise(
@@ -69,7 +69,7 @@ ga2 <- ga %>%
 
 dat_time_dunkin <- dat_dunkin %>%
     as_tibble() %>%
-    select(placekey, street_address, city, region, raw_visitor_counts, visits_by_day) %>%
+    select(placekey, street_address, city, region, raw_visitor_counts, visits_by_day) %>% # nolint
     filter(!is.na(raw_visitor_counts)) %>%
     unnest(visits_by_day) %>%
     rename(dayMonth = name, dayCount = value) %>%
@@ -85,18 +85,16 @@ dat_time_dunkin <- dat_dunkin %>%
 dat_time_dunkin %>%
     ggplot(aes(x = dayMonth, y = dayAverage)) +
     geom_point() +
-    geom_smooth(color="#fcae1f") +
-    geom_text(
-        aes(label = stores_label),
-            x = -Inf, y = Inf,
-            hjust = "left", vjust = "top") +
-    theme_light()       
-
+    geom_smooth(color = "#fcae1f") +
+    labs(title = "Time Plot for Dunkin", x = "Day of the Month",
+        y = "Average Visitor Counts") +
+    theme_light()
+ggsave(file = "Time_plot_Dunkin.png", width = 15, height = 6)
 
 ###########################################
 
 dat_space_starbucks <- dat_starbucks %>%
-    select(placekey, street_address, city, stusps = region, raw_visitor_counts) %>%
+    select(placekey, street_address, city, stusps = region, raw_visitor_counts) %>% # nolint
     filter(!is.na(raw_visitor_counts)) %>%
     group_by(stusps) %>%
     summarise(
@@ -113,7 +111,7 @@ ga2 <- ga %>%
 
 dat_time_starbucks <- dat_starbucks %>%
     as_tibble() %>%
-    select(placekey, street_address, city, region, raw_visitor_counts, visits_by_day) %>%
+    select(placekey, street_address, city, region, raw_visitor_counts, visits_by_day) %>% # nolint
     filter(!is.na(raw_visitor_counts)) %>%
     unnest(visits_by_day) %>%
     rename(dayMonth = name, dayCount = value) %>%
@@ -126,10 +124,11 @@ dat_time_starbucks <- dat_starbucks %>%
         stores_label = c(stores[1], rep(NA, length(stores) - 1))
     )
 
-f4 <- dat_time_starbucks %>%
+dat_time_starbucks %>%
     ggplot(aes(x = dayMonth, y = dayAverage)) +
     geom_point() +
     geom_smooth(color = "#0f410f") +
     theme_light() +
-    labs(title = "Figure 4: Time Plot for Starbucks", x = "Day of the Month", 
+    labs(title = "Time Plot for Starbucks", x = "Day of the Month",
         y = "Average Visitor Counts")
+ggsave(file = "Time_plot_Starbucks.png", width = 15, height = 6)
