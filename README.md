@@ -1,7 +1,7 @@
 # Coffee_Cohen_R
 
 - __Project Purpose:__ Take one to two paragraphs to explain your goals.  Why did you use this data? What skills are you going to demonstrate? Did you do this work for a client? 
-- The purpose of this project was to analyze the difference of Starbucks stores and Dunkin' stores. I used data from [Safegraph](safegraph.com) selecting the stores in GA. I looked at the locations of the two brands, which has more locations and which has more visitors rates on a specific sate. The skills I wanted to show was the ability to work with spatial data and having the variety of graphs. This project was for my own personal preference. 
+- The purpose of this project was to analyze the difference of Starbucks stores and Dunkin' stores. I used data from [Safegraph](https://www.safegraph.com/) selecting the stores in GA. I looked at the locations of the two brands, which has more locations and which has more visitors rates on a specific sate. The skills I wanted to show was the ability to work with spatial data and having the variety of graphs. This project was for my own personal preference. 
 - __Tools used:__ Provide an overview of the programming languages and packages you leveraged for this work.  You could provide links to the pertinent reading material that you leveraged to complete the job. Provide links to your final scripts stored in your repository.
 
 - __Results:__ This is your conclusion.  Explain why your work matters.  How could others use it?  What are your next steps? Show some key findings.
