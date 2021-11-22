@@ -5,9 +5,8 @@
 - __Tools used:__ 
 - I use R programming for this project and many packages: tidyverse, sf, jsonlite, USAboundaries, leaflet, ggthemes. The final scripts are [polygons.R](scripts/polygons.R) which shows the breaking down of the json tibbles and making the maps of the data and [time.R](scripts/time.R) which shows the process of creating the time plots for the average traffic in the data. 
 - __Results:__ This is your conclusion.  Explain why your work matters.  How could others use it?  What are your next steps? Show some key findings.
-The key finding I saw in the project was analyzing the time plots. Looking at the [Dunkin' Plot](documents/Time_plot_Dunkin.png) you see how the prediction of the average visitor counts is pretty consist. Whereas looking at the [Starbucks Plot](documents/Time_plot_Starbucks.png) You see a peak in the beginning of the month then slowly decreasing towards the end of the month. But looking at the Starbucks plot, the x axis starts at 25 and goes to 40 where as the Dunkin' only goes up to 25 visitors. In conclusion, more people go to Stabucks on average for the of Saturday in the week, but Dunkin' has more consistent amount of customers coming in over the month. 
-![Dunkin' Plot](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Time_plot_Dunkin.png)
-![Starbucks Plot](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Time_plot_Starbucks.png)
+The key finding I saw in the project was analyzing the time plots. Looking at the Dunkin' Plot ![Dunkin' Plot](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Time_plot_Dunkin.png) you see how the prediction of the average visitor counts is pretty consist. Whereas looking at the Starbucks Plot ![Starbucks Plot](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Time_plot_Starbucks.png) You see a peak in the beginning of the month then slowly decreasing towards the end of the month. But looking at the Starbucks plot, the x axis starts at 25 and goes to 40 where as the Dunkin' only goes up to 25 visitors. In conclusion, more people go to Stabucks on average for the of Saturday in the week, but Dunkin' has more consistent amount of customers coming in over the month. 
+
 
 
 ## Folder structure
