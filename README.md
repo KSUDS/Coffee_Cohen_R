@@ -20,7 +20,7 @@ While looking at the maps of Number of stores and Raw vistior counts for both br
 
 I concluded from looking at the scale legends of the two brands that once more Starbucks is more popular as they have more stores starting with 25 as base marker compared to 10 for Dunkin'. Starbucks size for the raw visitor counts starts at 2500 opposed to Dunkin' that starts at 500 which is a 133% percent difference. In both maps, its very intresting to see how both of the brands have many stores all over and even in some counties they have multiple stores and have different visitor rates as some of the stores show a bigger point representing people who came to the store. 
 
-I think this work matters in the way to see where to have locations of the stores for the owners. For the customers, it can help decide which brand is more popular. 
+I think this work matters in the way to see where to have locations of the stores for the owners. For the customers, it can help decide which brand is more popular to make decision which to do buisness with. My other next steps would also look at this data along with the population of the counties it could help explain why some stores have more activity and also could decide where to put new locations. 
 
 ## Folder structure
 
