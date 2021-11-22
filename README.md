@@ -12,8 +12,8 @@ you see how the prediction of the average visitor counts is pretty consist. Wher
 You see a peak in the beginning of the month then slowly decreasing towards the end of the month. But looking at the Starbucks plot, the x axis starts at 25 and goes to 40 where as the Dunkin' only goes up to 25 visitors. In conclusion, more people go to Stabucks on average for the day of Saturday in the week, but Dunkin' has more consistent amount of customers coming in over the month. 
 
 While looking at the maps of Number of stores and Raw vistior counts for both brands: 
-![Dunkin' Map](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents Number_of_Dunkin_stores_and_raw_visitor_counts.png) 
-![Starbucks Map](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents Number_of_Dunkin_stores_and_raw_visitor_counts.png)
+![Dunkin' Map](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Number_of_Dunkin_stores_and_raw_visitor_counts.png) 
+![Starbucks Map](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Number_of_Starbucks_stores_and_raw_visitor_counts.png)
 
 
 
