@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, sf, jsonlite, USAboundaries, leaflet, ggthemes)
+pacman::p_load(tidyverse, sf, jsonlite, USAboundaries, ggthemes)
 
 httpgd::hgd()
 httpgd::hgd_browse()
@@ -8,7 +8,7 @@ json_to_tibble <- function(x) {
     parse_json(x) %>%
     enframe() %>%
     unnest(value)
-} 
+}
 
 bracket_to_tibble <- function(x){ # nolint
     value <- str_replace_all(x, "\\[|\\]", "") %>%
@@ -142,7 +142,7 @@ ggplot() +
     scale_fill_viridis_c(option = "mako", begin = 0.1) +
     theme(legend.position = "left") +
     labs(fill = "Number of Starbucks\nStores", size = "Raw Visitor Counts")
-ggsave(file = "Number_of_Starbucks_stores_and_raw_visitor_counts.png", width = 15, height = 6)    
+ggsave(file = "Number_of_Starbucks_stores_and_raw_visitor_counts.png", width = 15, height = 6)
 
 gaw %>%
 ggplot() +
@@ -152,7 +152,7 @@ ggplot() +
     geom_sf(data = filter(dat_starbucks, region == "GA"), color = "#055f05", aes(size = raw_visitor_counts), alpha=0.35) + # nolint
     theme_bw() +
     theme(legend.position = "left")
-ggsave(file = "Number_of_stores_and_raw_visitor_counts.png", width = 15, height = 6)    
+ggsave(file = "Number_of_stores_and_raw_visitor_counts.png", width = 15, height = 6)
 
 ### formating data for vistior counts ##
     

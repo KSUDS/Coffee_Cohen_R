@@ -1,10 +1,14 @@
 # Coffee_Cohen_R
 
-- __Project Purpose:__ Take one to two paragraphs to explain your goals.  Why did you use this data? What skills are you going to demonstrate? Did you do this work for a client? 
-- The purpose of this project was to analyze the difference of Starbucks stores and Dunkin' stores. I used data from [Safegraph](https://www.safegraph.com/) selecting the stores in GA. I looked at the locations of the two brands, which has more locations and which has more visitors rates on a specific sate. The skills I wanted to show was the ability to work with spatial data and having the variety of graphs. This project was for my own personal preference. 
-- __Tools used:__ Provide an overview of the programming languages and packages you leveraged for this work.  You could provide links to the pertinent reading material that you leveraged to complete the job. Provide links to your final scripts stored in your repository.
-
+- __Project Purpose:__ 
+- The purpose of this project was to analyze the difference of Starbucks stores and Dunkin' stores, as they are popular coffee brands and wanted to see in a sense which one was more popular. I used data from [Safegraph](https://www.safegraph.com/) selecting the stores in GA. I looked at which of the two brands has more locations on the map and which has more visitors rates on a specific sate. The skills I wanted to show was the ability to work with spatial data and having the variety of graphs. This project was for my own personal preference. 
+- __Tools used:__ 
+- I use R programming for this project and many packages: tidyverse, sf, jsonlite, USAboundaries, leaflet, ggthemes. The final scripts are [polygons.R](scripts/polygons.R) which shows the breaking down of the json tibbles and making the maps of the data and [time.R](scripts/time.R) which shows the process of creating the time plots for the average traffic in the data. 
 - __Results:__ This is your conclusion.  Explain why your work matters.  How could others use it?  What are your next steps? Show some key findings.
+The key finding I saw in the project was analyzing the time plots. Looking at the [Dunkin' Plot](documents/Time_plot_Dunkin.png) you see how the prediction of the average visitor counts is pretty consist. Whereas looking at the [Starbucks Plot](documents/Time_plot_Starbucks.png) You see a peak in the beginning of the month then slowly decreasing towards the end of the month. But looking at the Starbucks plot, the x axis starts at 25 and goes to 40 where as the Dunkin' only goes up to 25 visitors. In conclusion, more people go to Stabucks on average for the of Saturday in the week, but Dunkin' has more consistent amount of customers coming in over the month. 
+![Dunkin' Plot](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Time_plot_Dunkin.png)
+![Starbucks Plot](https://raw.githubusercontent.com/ltcohen43/Coffee_Cohen_R/main/documents/Time_plot_Starbucks.png)
+
 
 ## Folder structure
 

@@ -1,5 +1,5 @@
 
-pacman::p_load(tidyverse, sf, jsonlite, USAboundaries, leaflet, ggthemes, geofacet) # nolint
+pacman::p_load(tidyverse, sf, jsonlite, USAboundaries, ggthemes, geofacet) # nolint
 
 httpgd::hgd()
 httpgd::hgd_browse()
